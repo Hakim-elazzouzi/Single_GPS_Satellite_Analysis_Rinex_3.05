@@ -52,7 +52,7 @@ project1-single-gps-satellite/
 ├── Outputs/
 │   ├── plot1_pseudorange_snr_arc.png
 │   ├── plot2_snr_heatmap.png
-├── project1_single_gps_satellite.py       ← Main notebook (run this)
+├── project1_single_gps_satellite.py      ← Main notebook (run this)
 ├── requirements.txt                       ← Python dependencies
 ├── LICENSE                                ← MIT License
 └── README.md                              ← This file
