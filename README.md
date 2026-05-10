@@ -49,7 +49,10 @@ Yellow/Orange → excellent signal (satellite overhead)
 
 ```
 project1-single-gps-satellite/
-├── project1_single_gps_satellite.ipynb   ← Main notebook (run this)
+├── Outputs/
+│   ├── plot1_pseudorange_snr_arc.png
+│   ├── plot2_snr_heatmap.png
+├── project1_single_gps_satellite.py       ← Main notebook (run this)
 ├── requirements.txt                       ← Python dependencies
 ├── LICENSE                                ← MIT License
 └── README.md                              ← This file
