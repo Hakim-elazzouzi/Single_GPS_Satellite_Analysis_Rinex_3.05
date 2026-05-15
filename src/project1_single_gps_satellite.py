@@ -1,12 +1,6 @@
 =============================================================================
-🛰️ Project 1 — Single GPS Satellite Analysis
+Project 1 — Single GPS Satellite Analysis
 =============================================================================
- Author   : Hakim El Azzouzi
- Degree   : MSc Global Navigation Satellite Systems
-            Mohammed First University, Oujda, Morocco
- Email    : elazzouzihakim10@gmail.com
- LinkedIn : https://linkedin.com/in/Hakim-El-Azzouzi
- Location : Luxembourg 🇱🇺
 -----------------------------------------------------------------------------
  Station  : AUCK00NZL  —  Auckland, New Zealand  (GeoNet / LINZ Network)
  File     : AUCK00NZL_R_20260010000_01D_30S_MO.rnx
@@ -63,7 +57,7 @@ print(f'   xarray version   : {xr.__version__}')
 # RINEX FILE PATH HERE
 obs_path = "/AUCK00NZL_R_20260010000_01D_30S_MO.rnx"  # ← change this path
 # Read the file header first (fast — no data loaded yet)
-print("📋 FILE HEADER")
+print(" FILE HEADER")
 print("=" * 60)
 header = gr.rinexheader(obs_path)
 
@@ -74,7 +68,7 @@ print()
 
 # Load all observation data (interval=30 means keep 30-sec rate)
 
-print("⏳ Loading observation data (this may take 1–2 minutes)...")
+print("Loading observation data (this may take 1–2 minutes)...")
 obs = gr.load(obs_path, interval=30)
 print()
 print("✅ Data loaded!")
@@ -91,7 +85,7 @@ print(f"🛰️  GPS satellites in this file ({len(gps_sats)} total):")
 print("   " + "  ".join(gps_sats))
 print()
 
-# 👉 Selecting One Satellite Here
+# Selecting One Satellite Here
 SAT = 'G05'   # ← change this to any GPS satellite listed above
 
 # Pseudorange: which observable to use?
@@ -121,12 +115,12 @@ print(f"✅ Selected satellite : {SAT}")
 print(f"   Pseudorange obs   : {pr_label}  ({len(pr)} valid epochs)")
 print(f"   SNR obs           : {snr_label}  ({len(snr)} valid epochs)")
 print()
-print(f"📊 Pseudorange statistics:")
+print(f" Pseudorange statistics:")
 print(f"   Min  : {pr.min()/1e6:.3f} Mm")
 print(f"   Max  : {pr.max()/1e6:.3f} Mm")
 print(f"   Mean : {pr.mean()/1e6:.3f} Mm")
 print()
-print(f"📊 SNR statistics:")
+print(f" SNR statistics:")
 print(f"   Min  : {snr.min():.1f} dB-Hz")
 print(f"   Max  : {snr.max():.1f} dB-Hz")
 print(f"   Mean : {snr.mean():.1f} dB-Hz")
@@ -215,7 +209,7 @@ plt.show()
 
 print(f'✅ Plot saved: plot1_pseudorange_snr_arc.png')
 print()
-print('💡 Interpretation:')
+print(' Interpretation:')
 print(f'   • The pseudorange arc shows the satellite rising, passing overhead, then setting.')
 print(f'   • Minimum pseudorange ({pr.min()/1e6:.2f} Mm) = satellite was directly overhead.')
 print(f'   • SNR peaks when the satellite is highest in the sky.')
@@ -306,7 +300,7 @@ plt.show()
 
 print('✅ Plot saved: plot2_snr_heatmap.png')
 print()
-print('💡 Interpretation:')
+print(' Interpretation:')
 print('   • Black areas    = satellite below horizon (no tracking)')
 print('   • Blue/Purple    = weak signal (low elevation or interference)')
 print('   • Green          = good signal quality (> 35 dB-Hz)')
