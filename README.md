@@ -1,4 +1,4 @@
-# 🛰️ Project 1 — Single GPS Satellite Analysis
+# Project 1 — Single GPS Satellite Analysis
 
 > **Pseudorange Arc & SNR Heatmap | 24-Hour Tracking | Auckland, NZ**
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project parses a **RINEX 3 GNSS observation file** and focuses on a **single GPS satellite** tracked continuously over a full 24-hour period from the **AUCK00NZL** geodetic reference station in Auckland, New Zealand.
 
@@ -18,12 +18,12 @@ From the raw RINEX data we extract two fundamental observables and visualise the
 
 | Plot | What It Shows |
 |------|--------------|
-| 📡 Pseudorange Arc | How the receiver-to-satellite distance evolves as the satellite rises, passes overhead, and sets |
-| 🌡️ SNR Heatmap | How signal strength varies throughout the tracking arc |
+| Pseudorange Arc | How the receiver-to-satellite distance evolves as the satellite rises, passes overhead, and sets |
+| SNR Heatmap | How signal strength varies throughout the tracking arc |
 
 ---
 
-## 🖼️ Output Plots
+## Output Plots
 
 ### Plot 1 — Pseudorange & SNR Time Series
 
@@ -45,7 +45,7 @@ Yellow/Orange → excellent signal (satellite overhead)
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```
 project1-single-gps-satellite/
@@ -61,7 +61,7 @@ project1-single-gps-satellite/
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 ### 1. Install dependencies
 
@@ -93,7 +93,7 @@ jupyter notebook project1_single_gps_satellite.ipynb
 
 ---
 
-## 🛠️ Dependencies
+## Dependencies
 
 | Package | Purpose |
 |---------|---------|
@@ -105,7 +105,7 @@ jupyter notebook project1_single_gps_satellite.ipynb
 
 ---
 
-## 📡 RINEX File Format
+## RINEX File Format
 
 This project was developed using:
 
@@ -121,7 +121,7 @@ The project is compatible with **any RINEX 3 observation file** from any station
 
 ---
 
-## 🧭 Observables Used
+## Observables Used
 
 | Code | Description |
 |------|-------------|
@@ -132,7 +132,7 @@ The project is compatible with **any RINEX 3 observation file** from any station
 
 ---
 
-## 👤 Author
+## Author
 
 **Hakim El Azzouzi**  
 MSc Global Navigation Satellite Systems  
@@ -143,13 +143,13 @@ Mohammed First University, Oujda, Morocco
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🔗 Part of the GNSS RINEX Analysis Series
+## Part of the GNSS RINEX Analysis Series
 
 | # | Project |
 |---|---------|
