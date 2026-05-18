@@ -7,6 +7,13 @@ import matplotlib.dates as mdates
 GPS_COLOR = "#2196F3"
 
 def plot_pseudorange_snr(pr, snr, pr_label, snr_label, sat):
+    """
+    Visualizes pseudorange variation and signal quality over time.
+
+    Top panel shows satellite range evolution (rise, zenith, set).
+    Bottom panel shows SNR variations with quality thresholds.
+    Highlights closest approach and low-signal regions.
+    """
     fig, axes = plt.subplots(2, 1, figsize=(14, 8), sharex=True, facecolor="#0d1117")
 
     fig.suptitle(f'GPS Satellite {sat} — Auckland (AUCK00NZL), 2026-01-01',
@@ -85,6 +92,12 @@ import matplotlib.dates as mdates
 from matplotlib.colors import LinearSegmentedColormap
 
 def plot_snr_heatmap(obs, sat):
+    """
+    Displays SNR heatmap representing satellite visibility and signal strength.
+
+    Uses full observation timeline to highlight tracking gaps,
+    signal quality transitions, and satellite availability over time.
+    """
     # Getting full time series including NaN (= satellite not visible)
     snr_full = obs["S1C"].sel(sv=sat).to_series()
     # Replace NaN with 5 (below vmin=15) so gaps render as dark background
