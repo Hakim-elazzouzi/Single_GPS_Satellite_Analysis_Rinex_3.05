@@ -2,6 +2,9 @@ import numpy as np
 
 def extract_observables(obs, sat):
     # Pseudorange
+    # C1C = L1 C/A code pseudorange (most common for GPS)
+    # C1X = L1 combined pseudorange (used by some receivers)
+    # We try C1C first, then fall back to C1X if not available.
     if "C1C" in obs.data_vars:
         pr = obs["C1C"].sel(sv=sat).to_series().dropna()
         pr_label = "C1C"
