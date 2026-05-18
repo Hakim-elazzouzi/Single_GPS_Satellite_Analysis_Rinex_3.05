@@ -4,7 +4,8 @@
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-GPS_COLOR = "#2196F3"
+# Constellation colour for GPS
+GPS_COLOR = "#2196F3"   # GPS blue
 
 def plot_pseudorange_snr(pr, snr, pr_label, snr_label, sat):
     """
