@@ -12,6 +12,12 @@ def get_gps_satellites(obs):
     print()
 
 def select_satellite(gps_sats, sat="G05"):
+    """
+    Selects a specific GPS satellite from available dataset.
+
+    Validates that the requested satellite exists in the observation file
+    and prepares it for pseudorange and SNR analysis.
+    """
     if sat not in gps_sats:
         raise ValueError(f"{sat} not found in dataset")
     return sat
