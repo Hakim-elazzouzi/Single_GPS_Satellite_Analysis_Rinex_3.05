@@ -1,4 +1,11 @@
 def summarize_observables(pr, snr):
+    """
+    Computes statistical summary of pseudorange and SNR measurements.
+
+    Calculates minimum, maximum, and mean values for both observables,
+    along with closest-approach epoch for pseudorange.
+    Also prints GNSS-formatted interpretation in engineering units.
+    """
     stats = {
         # Raw values (SI units)
         "pr_min": float(pr.min()),
