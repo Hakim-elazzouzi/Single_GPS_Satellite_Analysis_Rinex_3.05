@@ -16,8 +16,8 @@ def load_rinex(obs_path, interval=30):
 
     print("FILE HEADER")
     print("=" * 60)
-    for k, v in header.items():
-        print(f"{k:<25}: {v}")
+    for key, value in header.items():
+        print(f"{key:<25}: {value}")
 
     print("Loading observation data...")
     obs = gr.load(obs_path, interval=30)  # Load all observation data (interval=30 means keep 30-sec rate)
