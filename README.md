@@ -53,7 +53,13 @@ project1-single-gps-satellite/
 │   ├── plot1_pseudorange_snr_arc.png
 │   ├── plot2_snr_heatmap.png
 ├── src/
-│   ├── project1_single_gps_satellite.py      ← Main python (run this)
+│   ├── config.py
+│   ├── rinex_loader.py
+│   ├── satellite_selection.py
+│   ├── gnss_observables.py
+│   ├── analysis.py
+│   ├── visualization.py
+│   └── main.py
 ├── requirements.txt                          ← Python dependencies
 ├── LICENSE                                   ← MIT License
 └── README.md                                 ← This file
