@@ -7,6 +7,8 @@ from gnss_observables import extract_observables
 from analysis import summarize_observables
 from visualization import plot_pseudorange_snr, plot_snr_heatmap
 
+warnings.filterwarnings('ignore')  # suppress xarray FutureWarnings during load
+
 
 plt.rcParams.update(PLOT_STYLE)
 
