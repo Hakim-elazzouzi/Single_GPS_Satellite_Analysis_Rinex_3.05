@@ -81,7 +81,7 @@ def plot_pseudorange_snr(pr, snr, pr_label, snr_label, sat):
     plt.xticks(rotation=30, color="#aaaaaa")
     
     plt.tight_layout(rect=[0, 0, 1, 0.96])
-    plt.savefig('plot1_pseudorange_snr_arc.png', dpi=150, bbox_inches='tight', facecolor=fig.get_facecolor())
+    plt.savefig('Output/plot1_pseudorange_snr_arc.png', dpi=150, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.show()
 
 # ─────────────────────────────────────────────
@@ -166,6 +166,6 @@ def plot_snr_heatmap(obs, sat):
         spine.set_edgecolor("#333333")
     
     plt.tight_layout()
-    plt.savefig('plot2_snr_heatmap.png', dpi=150, bbox_inches='tight',
+    plt.savefig('Output/plot2_snr_heatmap.png', dpi=150, bbox_inches='tight',
                 facecolor=fig.get_facecolor())
     plt.show()
