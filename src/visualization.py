@@ -14,10 +14,10 @@ def plot_pseudorange_snr(pr, snr, pr_label, snr_label, sat):
 
     # Apply dark background to both panels
     for ax in axes:
-    ax.set_facecolor("#111827")
-    ax.tick_params(colors="#aaaaaa")
-    for spine in ax.spines.values():
-        spine.set_edgecolor("#333333")
+        ax.set_facecolor("#111827")
+        ax.tick_params(colors="#aaaaaa")
+        for spine in ax.spines.values():
+            spine.set_edgecolor("#333333")
     ax.grid(True, color="#222222", linewidth=0.5)
 
     # --- Pseudorange ---
