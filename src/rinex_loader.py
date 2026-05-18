@@ -10,7 +10,7 @@ def load_rinex(obs_path, interval=30):
         print(f"{k:<25}: {v}")
 
     print("Loading observation data...")
-    obs = gr.load(obs_path, interval=interval)
+    obs = gr.load(obs_path, interval=30)
 
     print("Loaded successfully")
     return obs, header
