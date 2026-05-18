@@ -4,6 +4,13 @@
 import georinex as gr
 
 def load_rinex(obs_path, interval=30):
+    """
+    Loads RINEX observation file and extracts metadata and measurements.
+
+    Reads the RINEX header for station and receiver information, then loads
+    observation data at the specified sampling interval.
+    Returns both parsed data and header information for GNSS processing.
+    """
     print("Reading RINEX header...")  
     header = gr.rinexheader(obs_path)     # Read the file header first (fast — no data loaded yet)
 
