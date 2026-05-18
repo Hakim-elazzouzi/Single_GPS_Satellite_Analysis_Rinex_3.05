@@ -138,7 +138,7 @@ def plot_snr_heatmap(obs, sat):
     ax.set_ylim(-0.5, 0.5)
     
     ax.set_title(
-        f'SNR Heatmap — GPS {SAT} | AUCK00NZL | 2026-01-01\n'
+        f'SNR Heatmap — GPS {sat} | AUCK00NZL | 2026-01-01\n'
         'Green/Yellow = strong signal  |  Blue/Purple = weak  |  Black = not visible',
         fontsize=12, fontweight='bold', color="#ffffff"
     )
