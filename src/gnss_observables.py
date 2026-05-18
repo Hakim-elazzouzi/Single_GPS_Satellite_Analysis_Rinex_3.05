@@ -1,6 +1,12 @@
 import numpy as np
 
 def extract_observables(obs, sat):
+    """
+    Extracts pseudorange and SNR observables for a selected satellite.
+
+    Selects L1 pseudorange (C1C or C1X) and corresponding SNR (S1C or S1X)
+    from the RINEX dataset, returning clean time series for analysis.
+    """
     # Pseudorange
     # C1C = L1 C/A code pseudorange (most common for GPS)
     # C1X = L1 combined pseudorange (used by some receivers)
