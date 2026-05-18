@@ -1,4 +1,10 @@
 def get_gps_satellites(obs):
+    """
+    Extracts GPS satellites from multi-constellation RINEX dataset.
+
+    Filters satellite identifiers and returns only GPS PRNs (G01–G32)
+    for further single-satellite analysis.
+    """
     all_sv = obs.sv.values          # List all GPS satellites present in the file
     return sorted([s for s in all_sv if s.startswith("G")])
     print(f"🛰️  GPS satellites in this file ({len(gps_sats)} total):")
