@@ -91,10 +91,12 @@ In **Step 3** of the notebook, change:
 SAT = 'G05'   # ← any GPS satellite PRN (G01–G32)
 ```
 
-### 4. Run all cells
+### 4. Run the code
 
 ```bash
-jupyter notebook project1_single_gps_satellite.ipynb
+From the project root directory:
+
+python src/main.py, and the plots will be saved in the output folder
 ```
 
 ---
